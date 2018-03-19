@@ -41,4 +41,4 @@ RUN \
 
 
 CMD \
-    /usr/sbin/apachectl -DFOREGROUND
+    httpd -D FOREGROUND
