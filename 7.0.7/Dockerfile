@@ -40,5 +40,9 @@ RUN \
     cp /usr/local/bin/mapserv /var/www/cgi-bin/mapserv
 
 
+COPY \
+    entrypoint.sh /entrypoint.sh
+
+
 CMD \
-    httpd -D FOREGROUND
+    bash /entrypoint.sh
